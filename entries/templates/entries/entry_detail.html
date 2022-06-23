@@ -1,0 +1,9 @@
+{% extends "entries/base.html" %}
+
+{% block content %}
+    <article>
+        <h2>{{ entry.created_on|date:'Y-m-d' }}</h2>
+        <h3>{{ entry.title }}</h3>
+        <p>{{ entry.content }}</p>
+    </article>
+{% endblock %}
